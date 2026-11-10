@@ -2,20 +2,21 @@
    Tokens from the style, then general rules only. */
 
 :root {
-  /* colour — DESIGN.md §2; one accent (moss, saturation < 80 %, white text passes AA) */
-  --canvas: #f9fafb;                    /* Canvas White */
-  --surface: #ffffff;                   /* Pure Surface */
-  --ink: #18181b;                       /* Charcoal Ink */
-  --steel: #71717a;                     /* Steel Secondary */
-  --line: rgb(226 232 240);             /* Whisper Border, opaque for dividers */
-  --border: rgba(226, 232, 240, .5);    /* Whisper Border on cards */
-  --accent: #3d6b4c;
-  --accent-ink: #2f5540;
-  --accent-wash: #edf3ef;
+  /* colour — smokes' house palette (СМ-04); one blue accent, white text passes AA */
+  --canvas: #fcfcfc;                    /* page */
+  --surface: #ffffff;                   /* cards */
+  --ink: #05080b;                       /* text */
+  --steel: #5c646f;                     /* secondary text */
+  --line: #dfe1e5;                      /* borders */
+  --border: #dfe1e5;                    /* borders on cards */
+  --accent: #006acf;
+  --accent-ink: #006acf;
+  --accent-wash: #d6efff;
+  --focus: #0086dd;
   --shadow: 0 20px 40px -15px rgba(0, 0, 0, .05);  /* Diffused Shadow */
-  /* type — §3 */
-  --font-sans: "Geist", "Segoe UI", system-ui, sans-serif;
-  --font-mono: "Geist Mono", ui-monospace, Consolas, monospace;
+  /* type — one family, Inter */
+  --font-sans: "Inter", "Segoe UI", system-ui, sans-serif;
+  --font-mono: "Inter", "Segoe UI", system-ui, sans-serif;
   --text-display: clamp(2.25rem, 5vw, 3.75rem);
   --text-h2: clamp(1.75rem, 3vw, 2.5rem);
   --text-h3: 1.25rem;
@@ -50,7 +51,7 @@ p { margin: 0; color: var(--steel); max-width: 65ch; }
 b { font-weight: 600; color: var(--ink); }
 a { color: inherit; }
 svg { display: block; }
-:focus-visible, select:focus { outline: 2px solid var(--accent); outline-offset: 2px; }
+:focus-visible, select:focus { outline: 2px solid var(--focus); outline-offset: 2px; }
 
 /* layout */
 .shell { max-width: var(--max); margin: 0 auto; padding: 0 var(--gutter); }
@@ -67,7 +68,7 @@ section > * + * { margin-top: clamp(2rem, 4vw, 3rem); }
 .bento > .wide { grid-column: span 7; }
 
 /* header, footer (also replace the shared base: white header, navy footer) */
-header { position: sticky; top: 0; z-index: 10; background: rgba(249, 250, 251, .86); backdrop-filter: blur(12px); border-bottom: 1px solid var(--line); }
+header { position: sticky; top: 0; z-index: 10; background: rgba(252, 252, 252, .86); backdrop-filter: blur(12px); border-bottom: 1px solid var(--line); }
 header .shell { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; min-height: 64px; }
 header nav { display: flex; flex-wrap: wrap; }
 header a { display: inline-flex; align-items: center; gap: .6rem; min-height: 44px; padding: 0 .75rem; border-radius: var(--radius-pill); color: var(--steel); text-decoration: none; transition: background-color var(--dur) var(--spring), color var(--dur) var(--spring); }
@@ -80,7 +81,7 @@ footer a { display: inline-flex; align-items: center; min-height: 44px; color: v
 /* components */
 .meta { display: inline-flex; align-items: center; gap: .5rem; font: 500 var(--text-meta)/1.4 var(--font-mono); letter-spacing: .02em; color: var(--steel); }
 .soft { color: var(--steel); }
-.button { display: inline-flex; align-items: center; justify-content: center; gap: .6rem; min-height: 52px; padding: 0 1.5rem; border: 1px solid var(--accent); border-radius: var(--radius-pill); background: var(--accent); color: #fff; font-weight: 600; text-decoration: none; transition: transform var(--dur) var(--spring), background-color var(--dur) var(--spring), border-color var(--dur) var(--spring); }
+.button { display: inline-flex; align-items: center; justify-content: center; gap: .6rem; min-height: 52px; padding: 0 1.5rem; border: 1px solid var(--accent); border-radius: var(--radius-pill); background: var(--accent); color: #ffffff; font-weight: 600; text-decoration: none; transition: transform var(--dur) var(--spring), background-color var(--dur) var(--spring), border-color var(--dur) var(--spring); }
 .button:hover { background: var(--accent-ink); }
 .button:active { transform: translateY(1px) scale(.98); }
 .button svg { width: 1.1em; height: 1.1em; }
@@ -97,7 +98,7 @@ footer a { display: inline-flex; align-items: center; min-height: 44px; color: v
 ol.rows > li::before { counter-increment: n; content: counter(n, decimal-leading-zero); align-self: start; font: 500 var(--text-meta)/1.8 var(--font-mono); color: var(--steel); }
 .tile { margin: 0; padding: var(--pad-card); background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-card); box-shadow: var(--shadow); }
 .badge { display: inline-flex; align-items: center; gap: .5rem; padding: .4rem .75rem; border: 1px solid var(--line); border-radius: var(--radius-pill); background: var(--surface); color: var(--steel); font: 500 .75rem/1.2 var(--font-mono); white-space: nowrap; }
-.badge.on { border-color: transparent; background: var(--accent-wash); color: var(--accent-ink); }
+.badge.on { border-color: transparent; background: var(--accent-wash); color: var(--ink); }
 .dot { width: 8px; height: 8px; flex: none; border-radius: 50%; background: var(--accent); }
 .skel { height: 10px; border-radius: var(--radius-pill); background: linear-gradient(90deg, var(--canvas), var(--line), var(--canvas)) 0 0 / 200% 100%; }
 label { display: grid; gap: .5rem; width: 100%; font-weight: 500; }
@@ -108,7 +109,7 @@ select { width: 100%; min-width: 0; min-height: 52px; padding: 0 1rem; font: inh
 .glyph svg { width: .56em; height: .56em; }
 .glyph.on { border-color: var(--accent); background: var(--accent); }
 .glyphs { display: none; font-size: 2.25rem; }
-.device { align-self: center; justify-self: end; width: min(100%, 340px); padding: 12px; border-radius: 2.75rem; background: var(--ink); font-size: .875rem; }
+.device { align-self: center; justify-self: end; width: min(100%, 340px); padding: 12px; border-radius: 2.75rem; background: var(--line); font-size: .875rem; }
 .device > div { border-radius: 2.1rem; padding: 1.25rem; background: var(--surface); }
 
 @media (max-width: 767px) {
