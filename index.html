@@ -15,6 +15,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <meta name="description" content="Voor plaagdierbeheersers: stations, waarnemingen en middelen vastleggen tijdens het bezoek, en het bezoekrapport gaat direct naar de klant.">
 <link rel="icon" href="favicon.svg">
 <link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="variant.css">
 <script src="smoke.js" defer></script>
 <!-- faq-jsonld:start -->
 <script type="application/ld+json">
@@ -73,38 +77,68 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
 
-<header><div class="wrap">
-  <div class="logo"><a href="index.html" data-ev="click_logo_home">Bezoekrapport Direct</a></div>
-  <nav class="top"><a href="#wat" data-ev="click_nav_wat">Wat u krijgt</a><a href="price.html" data-ev="click_nav_prijs">Prijs</a><a href="#voorbeeld" data-ev="click_nav_voorbeeld">Voorbeeld</a><a href="#start" data-ev="click_nav_start">Starten</a></nav>
+<header><div class="shell">
+  <a class="home" href="index.html" data-ev="click_logo_home">Bezoekrapport Direct</a>
+  <nav><a href="#wat" data-ev="click_nav_wat">Wat u krijgt</a><a href="price.html" data-ev="click_nav_prijs">Prijs</a><a href="#voorbeeld" data-ev="click_nav_voorbeeld">Voorbeeld</a><a href="#start" data-ev="click_nav_start">Starten</a></nav>
 </div></header>
 
-<div class="wrap">
-  <div class="hero">
-    <h1>Het bezoekrapport is klaar als u de deur uitloopt — en staat al in de mailbox van de klant</h1>
-    <p class="sub">Voor startende plaagdierbeheersers en kleine bedrijven: per locatie de plattegrond met stations, per station de bevinding en de actie, foto's en gebruikte middelen op de telefoon, een handtekening van de klant, en het rapport wordt automatisch verstuurd.</p>
-    <a class="cta" href="price.html" data-ev="cta_click">Dit heb ik nodig</a>
-    <p class="cta-note">Dienst in voorbereiding · Op deze pagina wordt niet betaald</p>
-  </div>
+<main class="shell">
+  <section class="split">
+    <div class="stack">
+      <p class="meta rise"><span class="dot"></span> Voor startende plaagdierbeheersers</p>
+      <h1 class="rise" style="--i:1" data-len="long">Het bezoekrapport is klaar als u de deur uitloopt&nbsp;<span class="soft">— en staat al in de mailbox van de klant</span></h1>
+      <p class="rise" style="--i:2">Voor startende plaagdierbeheersers en kleine bedrijven: per locatie de plattegrond met stations, per station de bevinding en de actie, foto's en gebruikte middelen op de telefoon, een handtekening van de klant, en het rapport wordt automatisch verstuurd.</p>
+      <a class="button rise" style="--i:3" href="price.html" data-ev="cta_click">Dit heb ik nodig</a>
+      <p class="meta rise" style="--i:4">Dienst in voorbereiding · Op deze pagina wordt niet betaald</p>
+    </div>
+    <figure class="window rise" style="--i:2"><svg aria-hidden="true" focusable="false" class="shot" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800"><rect width="1200" height="800" fill="#eef2f7" /><rect x="80" y="80" width="1040" height="640" fill="#ffffff" rx="24" stroke="#dde2ea" stroke-width="3" /><text x="130" y="165" font-size="40" fill="#0a1524" font-weight="600">bezoekrapport</text><line x1="110" y1="210" x2="1090" y2="210" fill="none" stroke="#dde2ea" stroke-width="3" /><rect x="130" y="260" width="44" height="44" fill="#dfe8f7" rx="8" /><polyline points="142,282 150,292 166,272" fill="none" stroke="#12397a" stroke-width="4" /><text x="200" y="292" font-size="32" fill="#0a1524">locatie</text><rect x="130" y="360" width="44" height="44" fill="#dfe8f7" rx="8" /><polyline points="142,382 150,392 166,372" fill="none" stroke="#12397a" stroke-width="4" /><text x="200" y="392" font-size="32" fill="#0a1524">handtekening</text><rect x="130" y="470" width="340" height="24" fill="#dde2ea" rx="8" /><rect x="130" y="540" width="260" height="24" fill="#b9c3d2" rx="8" /><rect x="700" y="250" width="380" height="420" fill="#dfe8f7" rx="20" /><text x="730" y="310" font-size="34" fill="#0a1524" font-weight="600">Stations</text><rect x="730" y="470" width="48" height="150" fill="#ffffff" rx="8" /><rect x="810" y="400" width="48" height="220" fill="#ffffff" rx="8" /><rect x="890" y="500" width="48" height="120" fill="#ffffff" rx="8" /><rect x="970" y="440" width="48" height="180" fill="#12397a" rx="8" /></svg></figure>
+    <dl class="facts">
+      <div><dt>Voor</dt><dd>Startende plaagdierbeheersers</dd></div>
+      <div><dt>Rapport</dt><dd>Wordt automatisch verstuurd</dd></div>
+      <div><dt>Hoe</dt><dd>Per station de bevinding</dd></div>
+      <div><dt>Dienst</dt><dd>In voorbereiding</dd></div>
+    </dl>
+  </section>
 
   <section id="wat" data-view="features_view">
-    <h2>Wat u krijgt</h2>
-    <div class="grid">
-      <div class="card"><b>Stations per locatie</b><span>Elk lokaas- en monitorstation met nummer en plek.</span><br><a class="btn" href="price.html" data-ev="feature_stations">Dit heb ik nodig</a></div>
-      <div class="card"><b>Bevindingen</b><span>Activiteit, actie en foto per station, tijdens het bezoek.</span><br><a class="btn" href="price.html" data-ev="feature_bevinding">Dit heb ik nodig</a></div>
-      <div class="card"><b>Rapport verstuurd</b><span>Bezoekrapport met handtekening direct naar de opdrachtgever.</span><br><a class="btn" href="price.html" data-ev="feature_rapport">Dit heb ik nodig</a></div>
-      <div class="card"><b>Historie</b><span>Alle bezoeken per locatie terug te vinden voor audits.</span><br><a class="btn" href="price.html" data-ev="feature_historie">Dit heb ik nodig</a></div>
+    <div class="stack"><h2>Wat u krijgt</h2></div>
+    <div class="bento">
+      <article class="tile stack reveal">
+        <div class="art"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600"><rect width="800" height="600" fill="#eef2f7" /><rect x="80" y="70" width="640" height="460" fill="#ffffff" rx="22" stroke="#dde2ea" stroke-width="3" /><text x="120" y="150" font-size="36" fill="#0a1524" font-weight="600">Stations</text><circle cx="200" cy="280" r="22" fill="#dfe8f7" /><circle cx="340" cy="240" r="22" fill="#12397a" /><circle cx="480" cy="320" r="22" fill="#dfe8f7" /><circle cx="280" cy="400" r="22" fill="#dfe8f7" /><circle cx="520" cy="420" r="22" fill="#12397a" /><circle cx="400" cy="360" r="22" fill="#dfe8f7" /><line x1="160" y1="460" x2="640" y2="460" fill="none" stroke="#dde2ea" stroke-width="3" /></svg></div>
+        <h3>Stations per locatie</h3><p>Elk lokaas- en monitorstation met nummer en plek.</p>
+        <a class="button quiet" href="price.html" data-ev="feature_stations">Dit heb ik nodig</a>
+      </article>
+      <article class="tile stack reveal">
+        <div class="art"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600"><rect width="800" height="600" fill="#eef2f7" /><rect x="80" y="70" width="640" height="460" fill="#ffffff" rx="22" stroke="#dde2ea" stroke-width="3" /><text x="120" y="150" font-size="36" fill="#0a1524" font-weight="600">Bevindingen</text><rect x="120" y="210" width="40" height="40" fill="#12397a" rx="8" /><polyline points="130,230 138,240 152,222" fill="none" stroke="#ffffff" stroke-width="4" /><rect x="190" y="218" width="280" height="22" fill="#dde2ea" rx="8" /><rect x="120" y="280" width="40" height="40" fill="#dfe8f7" rx="8" /><rect x="190" y="288" width="240" height="22" fill="#b9c3d2" rx="8" /><rect x="120" y="350" width="40" height="40" fill="#dfe8f7" rx="8" /><rect x="190" y="358" width="200" height="22" fill="#dde2ea" rx="8" /><rect x="120" y="420" width="40" height="40" fill="#dfe8f7" rx="8" /><rect x="190" y="428" width="160" height="22" fill="#b9c3d2" rx="8" /></svg></div>
+        <h3>Bevindingen</h3><p>Activiteit, actie en foto per station, tijdens het bezoek.</p>
+        <a class="button quiet" href="price.html" data-ev="feature_bevinding">Dit heb ik nodig</a>
+      </article>
+      <article class="tile stack reveal">
+        <div class="art"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600"><rect width="800" height="600" fill="#eef2f7" /><rect x="70" y="120" width="250" height="360" fill="#ffffff" rx="18" stroke="#dde2ea" stroke-width="3" /><rect x="480" y="120" width="250" height="360" fill="#ffffff" rx="18" stroke="#dde2ea" stroke-width="3" /><text x="96" y="190" font-size="32" fill="#0a1524" font-weight="600">handtekening</text><text x="506" y="190" font-size="32" fill="#0a1524" font-weight="600">mailbox</text><rect x="96" y="230" width="160" height="18" fill="#dde2ea" rx="6" /><rect x="96" y="270" width="120" height="18" fill="#b9c3d2" rx="6" /><rect x="506" y="230" width="170" height="18" fill="#dde2ea" rx="6" /><rect x="506" y="270" width="130" height="18" fill="#b9c3d2" rx="6" /><path d="M340 290 H450" fill="none" stroke="#12397a" stroke-width="6" /><polygon points="450,276 478,290 450,304" fill="#12397a" /><circle cx="196" cy="400" r="36" fill="#dfe8f7" /><polyline points="180,400 192,414 216,378" fill="none" stroke="#12397a" stroke-width="4" /></svg></div>
+        <h3>Rapport verstuurd</h3><p>Bezoekrapport met handtekening direct naar de opdrachtgever.</p>
+        <a class="button quiet" href="price.html" data-ev="feature_rapport">Dit heb ik nodig</a>
+      </article>
+      <article class="tile stack reveal">
+        <div class="art"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600"><rect width="800" height="600" fill="#eef2f7" /><rect x="140" y="70" width="520" height="460" fill="#ffffff" rx="18" stroke="#dde2ea" stroke-width="3" /><text x="180" y="150" font-size="36" fill="#0a1524" font-weight="600">Historie</text><rect x="180" y="200" width="300" height="20" fill="#dde2ea" rx="6" /><rect x="180" y="246" width="240" height="20" fill="#b9c3d2" rx="6" /><rect x="180" y="292" width="320" height="20" fill="#dde2ea" rx="6" /><rect x="180" y="338" width="180" height="20" fill="#b9c3d2" rx="6" /><rect x="180" y="400" width="200" height="48" fill="#12397a" rx="12" /></svg></div>
+        <h3>Historie</h3><p>Alle bezoeken per locatie terug te vinden voor audits.</p>
+        <a class="button quiet" href="price.html" data-ev="feature_historie">Dit heb ik nodig</a>
+      </article>
     </div>
   </section>
 
-  <section id="voorbeeld" data-view="example_view">
-    <h2>Voorbeeld (fictieve gegevens)</h2>
-    <p class="fine">Zelfstandige plaagdierbeheerser met 35 vaste klanten in de horeca. Bij een restaurant loopt hij 14 stations langs, noteert bij twee muizenactiviteit, vervangt het lokaas en maakt foto's. De bedrijfsleider tekent op de telefoon, en het rapport met advies staat binnen een minuut in haar mailbox.</p>
-    <a class="cta" href="price.html" data-ev="click_cta_after_example">Kies uw pakket</a>
+  <section id="voorbeeld" data-view="example_view" class="split flip">
+    <div class="stack">
+      <h2>Voorbeeld</h2>
+      <p>Zelfstandige plaagdierbeheerser met 35 vaste klanten in de horeca. Bij een restaurant loopt hij 14 stations langs, noteert bij twee muizenactiviteit, vervangt het lokaas en maakt foto's. De bedrijfsleider tekent op de telefoon, en het rapport met advies staat binnen een minuut in haar mailbox.</p>
+    <a class="button" href="price.html" data-ev="click_cta_after_example">Kies uw pakket</a>
+    </div>
+<svg aria-hidden="true" focusable="false" class="shot reveal" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800"><rect width="1200" height="800" fill="#eef2f7" /><line x1="200" y1="150" x2="1000" y2="150" fill="none" stroke="#dde2ea" stroke-width="6" /><circle cx="200" cy="150" r="22" fill="#ffffff" stroke="#12397a" stroke-width="6" /><circle cx="600" cy="150" r="22" fill="#ffffff" stroke="#12397a" stroke-width="6" /><circle cx="1000" cy="150" r="22" fill="#12397a" /><text x="200" y="230" font-size="32" fill="#0a1524" font-weight="600" text-anchor="middle">restaurant</text><text x="600" y="230" font-size="32" fill="#0a1524" font-weight="600" text-anchor="middle">stations</text><text x="1000" y="230" font-size="32" fill="#0a1524" font-weight="600" text-anchor="middle">mailbox</text><rect x="120" y="320" width="960" height="400" fill="#ffffff" rx="24" stroke="#dde2ea" stroke-width="3" /><text x="170" y="410" font-size="36" fill="#0a1524" font-weight="600">lokaas</text><text x="170" y="640" font-size="32" fill="#566174">handtekening</text><rect x="170" y="470" width="80" height="64" fill="#dfe8f7" rx="10" /><rect x="290" y="470" width="80" height="64" fill="#12397a" rx="10" /><rect x="410" y="470" width="80" height="64" fill="#dfe8f7" rx="10" /><rect x="530" y="470" width="80" height="64" fill="#dfe8f7" rx="10" /><rect x="650" y="470" width="80" height="64" fill="#12397a" rx="10" /><rect x="770" y="470" width="80" height="64" fill="#dfe8f7" rx="10" /></svg>
   </section>
 <!-- seo-tekst:start -->
-  <section id="opis">
-    <h2>Zo werkt het</h2>
-    <p>Een plaagdierbeheerser die bedrijven bezoekt, levert na elk bezoek een rapport op. Daarin staat welke stations zijn gecontroleerd, waar activiteit is gevonden, welke middelen zijn gebruikt en welk advies de klant krijgt. Voor horeca, voedingsbedrijven en zorginstellingen is dat rapport onderdeel van hun eigen dossier.</p>
+  <section id="opis" class="split flip">
+    <div class="stack"><h2>Zo werkt het</h2></div>
+    <div class="stack">
+      <p>Een plaagdierbeheerser die bedrijven bezoekt, levert na elk bezoek een rapport op. Daarin staat welke stations zijn gecontroleerd, waar activiteit is gevonden, welke middelen zijn gebruikt en welk advies de klant krijgt. Voor horeca, voedingsbedrijven en zorginstellingen is dat rapport onderdeel van hun eigen dossier.</p>
     <p>Wie net begint of alleen werkt, maakt dat rapport vaak 's avonds: aantekeningen van de dag overtypen in een document, foto's erbij zoeken, het rapport als bijlage mailen. Dat kost na een volle werkdag nog een uur, en soms komt het rapport pas dagen later bij de klant.</p>
     <p>De software laat u het rapport maken tijdens het bezoek. Per klant legt u de locaties vast, met een plattegrond of een lijst van stations: lokaasstations, monitoren, insectenvangers, elk met een nummer en een plek.</p>
     <p>Bij het bezoek loopt u de stations langs op uw telefoon. Per station kiest u de bevinding — geen activiteit, vraat, uitwerpselen, vangst — en de actie: lokaas vervangen, station verplaatst, monitor vernieuwd. Een foto maakt u direct vanuit de app.</p>
@@ -116,31 +150,34 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <p>Werkt u met een collega, dan ziet iedereen dezelfde locaties en stations, en elk rapport vermeldt wie het bezoek heeft gedaan. Overdragen van een klant kost geen extra uitleg, omdat de hele historie in het systeem staat.</p>
     <p>Starten kost een avond: uw klanten, hun locaties en stations. De software werkt in de browser op telefoon, tablet en computer, zonder installatie.</p>
     <p>De software is bedoeld voor startende plaagdierbeheersers en kleine bedrijven in Nederland. Ze is in voorbereiding: eerst kijken we of plaagdierbeheersers haar nodig hebben. Voor de inhoud van rapporten en het gebruik van middelen blijft de plaagdierbeheerser verantwoordelijk.</p>
+    </div>
   </section>
   <section id="faq">
-    <h2>Veelgestelde vragen</h2>
-    <h3>Voor wie is de software?</h3>
-    <p>Voor startende plaagdierbeheersers, zelfstandigen en kleine bedrijven in Nederland.</p>
-    <h3>Wanneer krijgt de klant het rapport?</h3>
-    <p>Direct na het bezoek: na de handtekening wordt het automatisch verstuurd.</p>
-    <h3>Worden gebruikte middelen vastgelegd?</h3>
-    <p>Ja, met naam, hoeveelheid en plek per bezoek.</p>
-    <h3>Moet ik iets installeren?</h3>
-    <p>Nee, de software werkt in de browser op telefoon, tablet en computer.</p>
-    <h3>Kan ik het al gebruiken?</h3>
-    <p>Nog niet. De software is in voorbereiding, en we kijken of plaagdierbeheersers haar nodig hebben.</p>
+    <div class="stack"><h2>Veelgestelde vragen</h2></div>
+    <div class="rows">
+      <div class="split flip"><h3>Voor wie is de software?</h3><p>Voor startende plaagdierbeheersers, zelfstandigen en kleine bedrijven in Nederland.</p></div>
+      <div class="split flip"><h3>Wanneer krijgt de klant het rapport?</h3><p>Direct na het bezoek: na de handtekening wordt het automatisch verstuurd.</p></div>
+      <div class="split flip"><h3>Worden gebruikte middelen vastgelegd?</h3><p>Ja, met naam, hoeveelheid en plek per bezoek.</p></div>
+      <div class="split flip"><h3>Moet ik iets installeren?</h3><p>Nee, de software werkt in de browser op telefoon, tablet en computer.</p></div>
+      <div class="split flip"><h3>Kan ik het al gebruiken?</h3><p>Nog niet. De software is in voorbereiding, en we kijken of plaagdierbeheersers haar nodig hebben.</p></div>
+    </div>
   </section>
 <!-- seo-tekst:end -->
-  <section id="start" data-view="start_view">
-    <h2>Voeg uw bedrijf toe</h2>
-    <p><label>Aantal vaste klanten<br><select data-ev-focus="form_start" style="margin-top:6px;padding:8px;font-size:16px"><option value="">— kies —</option><option>Tot 10</option><option>10–40</option><option>40–100</option><option>Meer dan 100</option></select></label></p>
-    <a class="cta" href="price.html" data-ev="form_submit_click">Starten</a>
+  <section id="start" data-view="start_view" class="split">
+    <div class="stack">
+      <h2>Voeg uw bedrijf toe</h2>
+    </div>
+    <div class="tile stack">
+      <label>Aantal vaste klanten<select data-ev-focus="form_start"><option value="">— kies —</option><option>Tot 10</option><option>10–40</option><option>40–100</option><option>Meer dan 100</option></select></label>
+      <a class="button" href="price.html" data-ev="form_submit_click">Starten</a>
+    </div>
   </section>
-</div>
+</main>
 
-<footer><div class="wrap">
+<footer><div class="shell">
+  <p><b>Bezoekrapport Direct</b></p>
   <p><a href="privacy.html" data-ev="click_legal_privacy">Privacy</a></p>
-  <p class="muted">Software voor uw bezoekrapporten. Voor de inhoud van rapporten en het gebruik van middelen blijft de plaagdierbeheerser verantwoordelijk.</p>
+  <p>Software voor uw bezoekrapporten. Voor de inhoud van rapporten en het gebruik van middelen blijft de plaagdierbeheerser verantwoordelijk.</p>
 </div></footer>
 
 </body>
